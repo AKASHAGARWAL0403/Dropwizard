@@ -46,6 +46,7 @@
              }
              function succFunction(tt) {
                  var json = eval(tt); //数组
+                 alert(json);
 
                  $.each(json, function (index, item) {
                      //循环获取数据

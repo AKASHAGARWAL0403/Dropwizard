@@ -19,12 +19,9 @@
                       <td>${store.id}</td>
                       <td>${store.name}</td>
                       <td>${store.address}</td>
-                      <td>﻿
-                          <div>
-                              <span id="canceledit${store.id}" style='display: none'><a href='#' onclick='canceledit(${store.id})'>canceledit</a></span>&nbsp<span id="edit${store.id}"><a href='#' onclick='editstore("${store.id}","${store.name}","${store.address}")'>edit</a></span>
-                          </div>
+                      <td>﻿<span id="canceledit${store.id}" style='display: none'><a href='#' onclick='canceledit(${store.id})'>canceledit</a></span>&nbsp<span id="edit${store.id}"><a href='#' onclick='editstore("${store.id}","${store.name}","${store.address}")'>edit</a></span>
+
                           <a href='#' onclick='delstore(${store.id})'>delete</a>
-                          </p>
                       </td>
                   </tr>
               </#list>

@@ -1,0 +1,30 @@
+    <class name="pcom.mt.Core.Store" table="store" schema="mystore">
+        <id name="id" type="string">
+            <column name="Id" length="4" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="45" not-null="true" />
+        </property>
+    </class>
+
+
+    @Entity
+    @Table(name = "store")
+    @NamedQueries({
+            @NamedQuery(
+                    name = "com.mt.Core.Store.findAll",
+                    query = "SELECT id,name,address FROM Store p"
+            ),
+            @NamedQuery(
+                    name = "com.mt.Core.Store.findById",
+                    query = "SELECT id,name,address FROM Store p WHERE p.id = :id"
+            )
+    })
+
+            //final DBIFactory factory = new DBIFactory();
+            //final DBI jdbi = factory.build(environment, configuration.getDatabaseConfiguration(), "mysql");
+            //DBI jdbi = new DBI("jdbc:mysql://localhost:3306/mystore","root","123qwe");
