@@ -5,8 +5,11 @@ package com.mt.Resource;
  */
 
 import com.google.common.base.Charsets;
+import com.mt.Core.StoreEx;
 import com.mt.Core.TempStores;
+import com.mt.Core.product;
 import com.mt.DB.IStoreJDBIDao;
+import com.mt.DB.ProductDao;
 import com.mt.DB.StoreDao;
 import com.mt.View.BaseView;
 import com.mt.Core.Store;
@@ -16,10 +19,7 @@ import com.yammer.metrics.annotation.Timed;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.Response;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +32,14 @@ public class DemoResource {
     private static final String STORELIST = "storelist";
     private final Charset charset;
     private final StoreDao storeDAO;
+    private final ProductDao productDao;
     private final IStoreJDBIDao storeJDBIDao;
 
-    public DemoResource(StoreDao storeDAO, IStoreJDBIDao storeJDBIDao) {
+
+    public DemoResource(StoreDao storeDAO, ProductDao productDao, IStoreJDBIDao storeJDBIDao) {
         charset = Charsets.UTF_8;
         this.storeDAO = storeDAO;
+        this.productDao = productDao;
         this.storeJDBIDao = storeJDBIDao;
     }
 
@@ -45,14 +48,23 @@ public class DemoResource {
     @UnitOfWork
     public BaseView get() {
         List<Store> stores;
+        List<StoreEx> storeExs = new ArrayList<StoreEx>();
         if (storeJDBIDao != null) {
             stores = storeJDBIDao.findAll();
         } else if (storeDAO != null) {
             stores = storeDAO.findAll();
+            for (Store store : stores) {
+                StoreEx storeEx = new StoreEx(store);
+                product p = productDao.findById(store.getProductId());
+                if (p != null) {
+                    storeEx.setProductName(p.getPname());
+                }
+                storeExs.add(storeEx);
+            }
         } else {
             stores = new TempStores().storeList;
         }
-        return new BaseView(STORELIST, charset, storeDAO, storeJDBIDao, (ArrayList<Store>) stores);
+        return new BaseView(STORELIST, charset, storeDAO, storeJDBIDao, (ArrayList<StoreEx>) storeExs);
     }
 
     @POST
@@ -62,13 +74,14 @@ public class DemoResource {
     public void add(@Context HttpServletResponse response,
                     @FormParam("id") int id,
                     @FormParam("name") String name,
-                    @FormParam("address") String address) throws IOException {
+                    @FormParam("address") String address,
+                    @FormParam("productId") int productId) throws IOException {
         if (storeJDBIDao != null) {
             storeJDBIDao.add(id, name, address);
         } else if (storeDAO != null) {
-            storeDAO.create(new Store(id, name, address));
+            storeDAO.create(new Store(id, name, address, productId));
         } else {
-            new TempStores().storeList.add(new Store(id, name, address));
+            new TempStores().storeList.add(new Store(id, name, address, productId));
         }
 
         response.sendRedirect("/demo");

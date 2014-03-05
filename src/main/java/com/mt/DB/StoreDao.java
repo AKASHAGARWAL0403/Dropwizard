@@ -16,7 +16,6 @@ import java.util.List;
 public class StoreDao extends AbstractDAO<Store> {
     public StoreDao(SessionFactory factory) {
         super(factory);
-
     }
 
     public Store findById(int id) {

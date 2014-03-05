@@ -9,6 +9,7 @@
                   <th>id</th>
                   <th>name</th>
                   <th>address</th>
+                  <th>productName</th>
                   <th>action</th>
               </tr>
               <tr>
@@ -19,7 +20,8 @@
                       <td>${store.id}</td>
                       <td>${store.name}</td>
                       <td>${store.address}</td>
-                      <td>﻿<span id="canceledit${store.id}" style='display: none'><a href='#' onclick='canceledit(${store.id})'>canceledit</a></span>&nbsp<span id="edit${store.id}"><a href='#' onclick='editstore("${store.id}","${store.name}","${store.address}")'>edit</a></span>
+                      <td>${store.getProductName()}</td>
+                      <td>﻿<span id="canceledit${store.id}" style='display: none'><a href='#' onclick='canceledit(${store.id})'>canceledit</a></span>&nbsp<span id="edit${store.id}"><a href='#' onclick='editstore("${store.id}","${store.name}","${store.address}","${store.productId}")'>edit</a></span>
 
                           <a href='#' onclick='delstore(${store.id})'>delete</a>
                       </td>
@@ -33,8 +35,15 @@
                   <td>
                       <input type='text' name='address' id='address' /></td>
                   <td>
+                      <select id='productId' name='productId'>
+                        <option value="1">p1</option>
+                        <option value="2">p2</option>
+                        <option value="3">p3</option>
+                      </select>
+
+                  <td>
                       <span>
-                          <input type='submit' style="width: 70" id='btnadd' value='add'>
+                          <input type='submit' style="width: 70" id='btnadd'   value='add'>
                           <input type='button' style="width: 70; display: none" id='btnedit' value='edit'>
                       </span>
                   </td>
@@ -62,6 +71,7 @@
                         $("#id").attr("value",json.id);
                         $("#name").attr("value",json.name);
                         $("#address").attr("value",json.address);
+                        $("#productId").val(json.productId);
                     }
                  }
              });
@@ -70,12 +80,13 @@
                   var a = $('#id').val();
                   var b = $('#name').val();
                   var c = $('#address').val();
+                  var d = $('#productId').val();
                   $.ajax({
                       async: false,
                       url: "/api/stat/edit",
                       type: "post",
                       dataType: 'json',
-                      data: { id: a, name: b, address: c },
+                      data: { id: a, name: b, address: c ,productId: d},
                       error: function (msg) {
                       },
                       success: function (msg) {
@@ -85,7 +96,7 @@
            });
      });
 
-      function editstore(id,name,address) {
+      function editstore(id,name,address,productId) {
               $('#btnedit').show();
               $('#btnadd').hide();
               $('#canceledit' + id).show();
@@ -93,6 +104,7 @@
               $("#id").attr("value",id);
               $("#name").attr("value",name);
               $("#address").attr("value",address);
+              $("#productId").val(productId)
               $("#id").attr("disabled", "true");
           }
 
@@ -124,6 +136,7 @@
          $("#id").attr("value","");
          $("#name").attr("value","");
          $("#address").attr("value","");
+         $("#productId").val(productId);
          $("#id").removeAttr("disabled");
      }
 

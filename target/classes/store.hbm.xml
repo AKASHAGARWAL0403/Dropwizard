@@ -15,6 +15,10 @@
         <property name="address" type="String">
             <column name="address" length="45" not-null="false" />
         </property>
+        <property name="productid" type="int">
+            <column name="productid" length="4"  />
+        </property>
+
     </class>
     <sql-query name="com.mt.Core.Store.findAll">
         <return alias="store" class="com.mt.Core.Store"/>

@@ -13,6 +13,6 @@ import java.sql.SQLException;
 public class StoreMapper implements ResultSetMapper<Store> {
     @Override
     public Store map(int i, ResultSet r, StatementContext statementContext) throws SQLException {
-        return new Store(r.getInt("id"), r.getString("name"),r.getString("address"));
+        return new Store(r.getInt("id"), r.getString("name"),r.getString("address"),r.getInt("productId"));
     }
 }
