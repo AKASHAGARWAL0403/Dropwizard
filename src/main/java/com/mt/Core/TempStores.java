@@ -15,11 +15,13 @@ public class TempStores {
          if(storeList == null)
          {
              storeList = new ArrayList<Store>();
+             /*
              storeList.add(new Store(1,"k1","d1",1));
              storeList.add(new Store(2,"k2","d2",2));
              storeList.add(new Store(3,"k3","d3",3));
              storeList.add(new Store(4,"k4","d4",4));
              storeList.add(new Store(5,"k5","d5",5));
+             */
          }
     }
 }

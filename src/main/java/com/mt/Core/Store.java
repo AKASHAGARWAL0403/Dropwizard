@@ -2,6 +2,7 @@ package com.mt.Core;
 
 
 import com.mt.DB.ProductDao;
+import org.hibernate.annotations.Fetch;
 
 import javax.persistence.*;
 import java.util.Dictionary;
@@ -16,7 +17,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(
                 name = "com.mt.Core.Store.findAll",
-                query = "SELECT new Store(id,name,address,productId) FROM Store p"
+                query = "FROM Store p left join fetch p.relatedProduct"
         ),
         @NamedQuery(
                 name = "com.mt.Core.Store.findById",
@@ -31,19 +32,40 @@ public class Store {
     private String name;
     @Column(name = "address", nullable = true)
     private String address;
-    @Column(name = "productId", nullable = true)
+
+    @Column(name = "productId", nullable = false)
     private int productId;
 
+    @ManyToOne(targetEntity = product.class)
+    @JoinColumn(name = "productId",insertable = false, updatable = false )
+    private product relatedProduct;
+
+    public product getProduct() {
+        return relatedProduct;
+    }
+
+    public void setType(product relatedProduct) {
+        this.relatedProduct = relatedProduct;
+    }
 
     public Store() {
 
+    }
+
+    public Store(int id, String name, String address, product relatedProduct) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.relatedProduct = relatedProduct;
+        //this.relatedProduct.setId(productId);
     }
 
     public Store(int id, String name, String address, int productId) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.productId = productId;
+        //this.productId = productId;
+        //this.relatedProduct.setId(productId);
     }
 
     public int getId() {
@@ -59,11 +81,12 @@ public class Store {
     }
 
     public int getProductId() {
-        return productId;
+        return relatedProduct.getId();
     }
 
-
-
+    public String getProductName() {
+        return relatedProduct.getPname();
+    }
 
 
     public void setid(int id) {
@@ -78,10 +101,10 @@ public class Store {
         this.address = address;
     }
 
+
     public void setProductId(int productId) {
         this.productId = productId;
     }
-
 
 
 

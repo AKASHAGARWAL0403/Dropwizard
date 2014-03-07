@@ -11,7 +11,7 @@ public class StoreEx extends Store {
         setid(store.getId());
         setName(store.getName());
         setaddress(store.getAddress());
-        setProductId(store.getProductId());
+        //setProductId(store.getProductId());
     }
 
     public String getProductName() {

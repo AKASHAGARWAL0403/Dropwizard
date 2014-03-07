@@ -48,12 +48,14 @@ public class DemoResource {
     @UnitOfWork
     public BaseView get() {
         List<Store> stores;
-        List<StoreEx> storeExs = new ArrayList<StoreEx>();
+        //List<StoreEx> storeExs = new ArrayList<StoreEx>();
         if (storeJDBIDao != null) {
             stores = storeJDBIDao.findAll();
         } else if (storeDAO != null) {
             stores = storeDAO.findAll();
+            /*
             for (Store store : stores) {
+                product p1 = store.getProduct();
                 StoreEx storeEx = new StoreEx(store);
                 product p = productDao.findById(store.getProductId());
                 if (p != null) {
@@ -61,10 +63,11 @@ public class DemoResource {
                 }
                 storeExs.add(storeEx);
             }
+            */
         } else {
             stores = new TempStores().storeList;
         }
-        return new BaseView(STORELIST, charset, storeDAO, storeJDBIDao, (ArrayList<StoreEx>) storeExs);
+        return new BaseView(STORELIST, charset, storeDAO, storeJDBIDao, (ArrayList<Store>) stores);
     }
 
     @POST

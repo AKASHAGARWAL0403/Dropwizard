@@ -27,11 +27,14 @@ import java.util.List;
 public class product {
 
     @Id
+    @Column(name = "id", nullable = false)
     private int id;
     @Column(name = "pname", nullable = true)
     private String pname;
     @Column(name = "pdetail", nullable = true)
     private String pdetail;
+
+
 
     public product()
     {
@@ -47,6 +50,8 @@ public class product {
     public int getId() {
         return id;
     }
+
+    public void setId(int id){this.id = id;}
 
     public String getPname() {
         return pname;
