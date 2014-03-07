@@ -1,12 +1,7 @@
 package com.mt.Core;
 
 
-import com.mt.DB.ProductDao;
-import org.hibernate.annotations.Fetch;
-
 import javax.persistence.*;
-import java.util.Dictionary;
-import java.util.List;
 
 /**
  * Created by bing.du on 2/17/14.
@@ -17,7 +12,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(
                 name = "com.mt.Core.Store.findAll",
-                query = "FROM Store p left join fetch p.relatedProduct"
+                query = "FROM Store p left join fetch p.relatedCity"
         ),
         @NamedQuery(
                 name = "com.mt.Core.Store.findById",
@@ -33,39 +28,39 @@ public class Store {
     @Column(name = "address", nullable = true)
     private String address;
 
-    @Column(name = "productId", nullable = false)
-    private int productId;
+    @Column(name = "cityId", nullable = false)
+    private int cityId;
 
-    @ManyToOne(targetEntity = product.class)
-    @JoinColumn(name = "productId",insertable = false, updatable = false )
-    private product relatedProduct;
+    @ManyToOne(targetEntity = City.class)
+    @JoinColumn(name = "cityId",insertable = false, updatable = false)
+    private City relatedCity;
 
-    public product getProduct() {
-        return relatedProduct;
+    public City getProduct() {
+        return relatedCity;
     }
 
-    public void setType(product relatedProduct) {
-        this.relatedProduct = relatedProduct;
+    public void setType(City relatedCity) {
+        this.relatedCity = relatedCity;
     }
 
     public Store() {
 
     }
 
-    public Store(int id, String name, String address, product relatedProduct) {
+    public Store(int id, String name, String address, City relatedCity) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.relatedProduct = relatedProduct;
-        //this.relatedProduct.setId(productId);
+        this.relatedCity = relatedCity;
+        //this.relatedCity.setId(productId);
     }
 
-    public Store(int id, String name, String address, int productId) {
+    public Store(int id, String name, String address, int cityId) {
         this.id = id;
         this.name = name;
         this.address = address;
-        //this.productId = productId;
-        //this.relatedProduct.setId(productId);
+        this.cityId = cityId;
+        //this.relatedCity.setId(productId);
     }
 
     public int getId() {
@@ -80,12 +75,12 @@ public class Store {
         return address;
     }
 
-    public int getProductId() {
-        return relatedProduct.getId();
+    public int getCityId() {
+        return relatedCity.getId();
     }
 
-    public String getProductName() {
-        return relatedProduct.getPname();
+    public String getCityName() {
+        return relatedCity.getCname();
     }
 
 
@@ -102,8 +97,8 @@ public class Store {
     }
 
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void setCityId(int CityId) {
+        this.cityId = CityId;
     }
 
 

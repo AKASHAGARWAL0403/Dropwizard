@@ -47,13 +47,13 @@ public class ActionResource {
     public boolean add(@FormParam("id") int id,
                                 @FormParam("name") String name,
                                 @FormParam("address") String address,
-                                @FormParam("productId") int productId) {
+                                @FormParam("cityId") int cityId) {
         if (storeJDBIDao != null) {
              storeJDBIDao.add(id,name,address);
         } else if (storeDAO != null) {
-            storeDAO.create(new Store(id,name,address,productId));
+            storeDAO.create(new Store(id,name,address,cityId));
         } else {
-            new TempStores().storeList.add(new Store(id,name,address,productId));
+            new TempStores().storeList.add(new Store(id,name,address,cityId));
         }
         return true;
     }
@@ -88,21 +88,21 @@ public class ActionResource {
     public void edit(@FormParam("id") int id,
                      @FormParam("name") String name,
                      @FormParam("address") String address,
-                     @FormParam("productId") int productId) {
+                     @FormParam("cityId") int cityId) {
         if (storeJDBIDao != null) {
             storeJDBIDao.update(id, name, address);
         } else if (storeDAO != null) {
             Store currentStore = storeDAO.findById(id);
             currentStore.setName(name);
             currentStore.setaddress(address);
-            currentStore.setProductId(productId);
+            currentStore.setCityId(cityId);
             storeDAO.edit(currentStore);
         } else {
             for (Store store : new TempStores().storeList) {
                 if(store.getId()==id)
                 {
                     new TempStores().storeList.remove(store);
-                    new TempStores().storeList.add(new Store(id,name,address,productId));
+                    new TempStores().storeList.add(new Store(id,name,address,cityId));
                 }
             }
         }

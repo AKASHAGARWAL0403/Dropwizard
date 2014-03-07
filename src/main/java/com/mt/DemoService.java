@@ -5,6 +5,7 @@ package com.mt;
  */
 
 
+import com.mt.Core.City;
 import com.mt.Core.Store;
 import com.mt.Core.product;
 import com.mt.DB.IStoreJDBIDao;
@@ -29,7 +30,7 @@ public class DemoService extends Service<DemoConfiguration> {
         new DemoService().run(args);
     }
 
-    private final HibernateBundle<DemoConfiguration> hibernate = new HibernateBundle<DemoConfiguration>(Store.class,product.class) {
+    private final HibernateBundle<DemoConfiguration> hibernate = new HibernateBundle<DemoConfiguration>(Store.class,City.class) {
         @Override
         public DatabaseConfiguration getDatabaseConfiguration(DemoConfiguration configuration) {
 

@@ -69,25 +69,29 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/StoreDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="13" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/ProductDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="1" selection-start="227" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="450">
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/dropwizard/dropwizard-hibernate/0.6.2/dropwizard-hibernate-0.6.2-sources.jar!/com/yammer/dropwizard/hibernate/AbstractDAO.java">
+      <file leaf-file-name="Store.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/Store.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="64" selection-start="4919" selection-end="4931" vertical-scroll-proportion="0.0" vertical-offset="1987" max-vertical-offset="2520">
+            <state line="72" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1500">
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1723#1753#0" expanded="false" />
-                <element signature="e#2216#2246#0" expanded="false" />
-                <element signature="e#2736#2766#0" expanded="false" />
-                <element signature="e#3112#3142#0" expanded="false" />
-                <element signature="e#3443#3473#0" expanded="false" />
-                <element signature="e#4052#4082#0" expanded="false" />
+                <element signature="e#2116#2117#0" expanded="true" />
+                <element signature="e#2152#2153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,37 +100,7 @@
       <file leaf-file-name="StoreEx.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/StoreEx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Store.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/Store.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="72" selection-start="976" selection-end="976" vertical-scroll-proportion="0.5286458" vertical-offset="307" max-vertical-offset="1500">
-              <folding>
-                <element signature="e#2325#2326#0" expanded="true" />
-                <element signature="e#2367#2368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DemoConfiguration.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DemoConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersistentClass.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.9.Final/hibernate-core-4.1.9.Final-sources.jar!/org/hibernate/mapping/PersistentClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="727" column="34" selection-start="22190" selection-end="22190" vertical-scroll-proportion="0.0" vertical-offset="10905" max-vertical-offset="13110">
+            <state line="5" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -135,16 +109,54 @@
       <file leaf-file-name="storelist.ftl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/views/page/storelist.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="66" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2250">
+            <state line="150" column="32" selection-start="5627" selection-end="5627" vertical-scroll-proportion="-4.423077" vertical-offset="2135" max-vertical-offset="2520">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/View/BaseView.java">
+      <file leaf-file-name="City.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/City.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="27" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="765">
+            <state line="12" column="45" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="765">
+              <folding>
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CityDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/CityDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="45" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DemoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="120" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoResource.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Resource/DemoResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="0" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.33333334" vertical-offset="412" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -153,19 +165,8 @@
       <file leaf-file-name="ActionResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Resource/ActionResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="61" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2235">
+            <state line="104" column="83" selection-start="3249" selection-end="3249" vertical-scroll-proportion="0.0" vertical-offset="1443" max-vertical-offset="2235">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="24" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="930">
-              <folding>
-                <element signature="method#setId#0;class#product#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -180,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mt/HelloWorldConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mt/HelloWorldResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Resource/HelloWorldResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Resource/AddResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/StoreList.java" />
@@ -221,15 +220,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/product.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Core/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mt/DemoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Core/TempStores.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/DB/StoreMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mt/Resource/DemoResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/View/BaseView.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/views/page/storelist.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Core/StoreEx.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Core/product.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Resource/ActionResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mt/Resource/DemoResource.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/views/page/storelist.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mt/Core/City.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mt/DB/CityDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mt/DemoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mt/Core/Store.java" />
       </list>
     </option>
@@ -847,6 +848,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34820145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37410071" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -862,7 +864,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34820145" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -892,16 +893,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/dropwizard/dropwizard-views/0.6.2/dropwizard-views-0.6.2.jar!/com/yammer/dropwizard/views/freemarker/FreemarkerViewRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="561" selection-end="561" vertical-scroll-proportion="-7.04" vertical-offset="4" max-vertical-offset="375" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/dropwizard/dropwizard-views/0.6.2/dropwizard-views-0.6.2.jar!/com/yammer/dropwizard/views/ViewMessageBodyWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="1385" selection-end="1385" vertical-scroll-proportion="-9.44" vertical-offset="94" max-vertical-offset="465" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/8.1.10.v20130312/jetty-server-8.1.10.v20130312-sources.jar!/org/eclipse/jetty/server/handler/ContextHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1033" column="0" selection-start="36694" selection-end="36694" vertical-scroll-proportion="0.0" vertical-offset="13647" max-vertical-offset="35385" />
@@ -978,13 +969,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Resource/HelloWorldResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/Saying.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
@@ -1068,36 +1052,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="450">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DemoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="13" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="900">
-          <folding>
-            <element signature="e#1037#1056#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/store.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/dropwizard/dropwizard-hibernate/0.6.2/dropwizard-hibernate-0.6.2-sources.jar!/com/yammer/dropwizard/hibernate/UnitOfWorkRequestDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1523" selection-end="1523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.9.Final/hibernate-core-4.1.9.Final-sources.jar!/org/hibernate/internal/util/ReflectHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="354" column="0" selection-start="11997" selection-end="11997" vertical-scroll-proportion="0.0" vertical-offset="4647" max-vertical-offset="5310" />
@@ -1124,47 +1078,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Resource/DemoResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="23" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/View/BaseView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="27" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.1.9.Final/hibernate-core-4.1.9.Final-sources.jar!/org/hibernate/mapping/PersistentClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="727" column="34" selection-start="22190" selection-end="22190" vertical-scroll-proportion="0.0" vertical-offset="8067" max-vertical-offset="11235">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/StoreEx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/views/page/storelist.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="66" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="2250">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/StoreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="630">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,15 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="24" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="930">
-          <folding>
-            <element signature="method#setId#0;class#product#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DemoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="510">
@@ -1199,20 +1107,141 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/View/BaseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/dropwizard/dropwizard-hibernate/0.6.2/dropwizard-hibernate-0.6.2-sources.jar!/com/yammer/dropwizard/hibernate/UnitOfWorkRequestDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1741" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="472" max-vertical-offset="1260">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
+            <element signature="e#917#918#0" expanded="false" />
+            <element signature="e#965#966#0" expanded="false" />
+            <element signature="e#998#999#0" expanded="false" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1084#1085#0" expanded="false" />
+            <element signature="e#1590#1608#0" expanded="false" />
+            <element signature="e#2681#2711#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/Saying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding>
+            <element signature="e#236#237#0" expanded="false" />
+            <element signature="e#261#262#0" expanded="false" />
+            <element signature="e#295#296#0" expanded="false" />
+            <element signature="e#325#326#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/store.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="25" selection-start="574" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="930">
+          <folding>
+            <element signature="method#setId#0;class#product#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/StoreEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Resource/ActionResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="61" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2235">
+        <state line="104" column="83" selection-start="3249" selection-end="3249" vertical-scroll-proportion="0.0" vertical-offset="1443" max-vertical-offset="2235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/page/storelist.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="32" selection-start="5627" selection-end="5627" vertical-scroll-proportion="-4.423077" vertical-offset="2135" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="765">
+          <folding>
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="1" selection-start="227" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="450">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/CityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DemoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="120" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/DB/StoreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="13" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Core/Store.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="72" selection-start="976" selection-end="976" vertical-scroll-proportion="0.5286458" vertical-offset="307" max-vertical-offset="1500">
+        <state line="72" column="0" selection-start="1642" selection-end="1642" vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1500">
           <folding>
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2367#2368#0" expanded="true" />
+            <element signature="e#2116#2117#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mt/Resource/DemoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.33333334" vertical-offset="412" max-vertical-offset="1260">
+          <folding />
         </state>
       </provider>
     </entry>

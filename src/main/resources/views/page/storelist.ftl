@@ -9,25 +9,32 @@
                   <th>id</th>
                   <th>name</th>
                   <th>address</th>
-                  <th>productName</th>
+                  <th>CityName</th>
                   <th>action</th>
               </tr>
               <tr>
                   <input type='text' name='searchid' id='searchid' />&nbsp<input type='button' style="width: 70;" id='btnsearch' value='search'>
               </tr>
+              <tr id="search_tr"  style='display: none'>
+                    <td id="search_id"></td>
+                    <td id="search_name"></td>
+                    <td id="search_address"></td>
+                    <td id="search_cityName"></td>
+                     <td ><a href='#' onclick='tableshow()'>return</a></td>
+              </tr>
               <#list getStores() as store>
-                  <tr>
+                  <tr class="storeTable" id="storeTable${store.id}">
                       <td>${store.id}</td>
                       <td>${store.name}</td>
                       <td>${store.address}</td>
-                      <td>${store.getProductName()}</td>
-                      <td>﻿<span id="canceledit${store.id}" style='display: none'><a href='#' onclick='canceledit(${store.id})'>canceledit</a></span>&nbsp<span id="edit${store.id}"><a href='#' onclick='editstore("${store.id}","${store.name}","${store.address}","${store.productId}")'>edit</a></span>
+                      <td>${store.getCityName()}</td>
+                      <td>﻿<span id="canceledit${store.id}" style='display: none'><a href='#' onclick='canceledit(${store.id})'>canceledit</a></span>&nbsp<span id="edit${store.id}"><a href='#' onclick='editstore("${store.id}","${store.name}","${store.address}","${store.cityId}")'>edit</a></span>
 
                           <a href='#' onclick='delstore(${store.id})'>delete</a>
                       </td>
                   </tr>
               </#list>
-              <tr>
+              <tr id="storeTable_add" class="storeTable">
                   <td>
                       <input type='text' name='id' id='id' /></td>
                   <td>
@@ -35,10 +42,10 @@
                   <td>
                       <input type='text' name='address' id='address' /></td>
                   <td>
-                      <select id='productId' name='productId'>
-                        <option value="1">p1</option>
-                        <option value="2">p2</option>
-                        <option value="3">p3</option>
+                      <select id='cityId' name='cityId'>
+                        <option value="1">c1</option>
+                        <option value="2">c2</option>
+                        <option value="3">c3</option>
                       </select>
 
                   <td>
@@ -53,6 +60,7 @@
       </form>
 </body>
 ﻿<script type="text/javascript">
+
      $(document).ready(function () {
          $('#btnsearch').click(function () {
              var a = $('#searchid').val();
@@ -68,10 +76,12 @@
                     var json = eval(tt);
                     if(json!=null)
                     {
-                        $("#id").attr("value",json.id);
-                        $("#name").attr("value",json.name);
-                        $("#address").attr("value",json.address);
-                        $("#productId").val(json.productId);
+                        $("#search_id").text(json.id);
+                        $("#search_name").text(json.name);
+                        $("#search_address").text(json.address);
+                        $("#search_cityName").text(json.cityName);
+                        $('#search_tr').show();
+                        $('.storeTable').hide();
                     }
                  }
              });
@@ -80,13 +90,13 @@
                   var a = $('#id').val();
                   var b = $('#name').val();
                   var c = $('#address').val();
-                  var d = $('#productId').val();
+                  var d = $('#cityId').val();
                   $.ajax({
                       async: false,
                       url: "/api/stat/edit",
                       type: "post",
                       dataType: 'json',
-                      data: { id: a, name: b, address: c ,productId: d},
+                      data: { id: a, name: b, address: c ,cityId: d},
                       error: function (msg) {
                       },
                       success: function (msg) {
@@ -96,7 +106,7 @@
            });
      });
 
-      function editstore(id,name,address,productId) {
+      function editstore(id,name,address,cityId) {
               $('#btnedit').show();
               $('#btnadd').hide();
               $('#canceledit' + id).show();
@@ -104,9 +114,11 @@
               $("#id").attr("value",id);
               $("#name").attr("value",name);
               $("#address").attr("value",address);
-              $("#productId").val(productId)
+              $("#cityId").val(cityId)
               $("#id").attr("disabled", "true");
           }
+
+
 
      function delstore(value) {
          jQuery.ajax({
@@ -136,9 +148,15 @@
          $("#id").attr("value","");
          $("#name").attr("value","");
          $("#address").attr("value","");
-         $("#productId").val(productId);
+         $("#cityId").val(cityId);
          $("#id").removeAttr("disabled");
      }
+
+      function tableshow()
+      {
+         $('#search_tr').hide();
+         $('.storeTable').show();
+      }
 
 </script>
 </html>

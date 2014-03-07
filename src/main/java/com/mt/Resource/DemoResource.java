@@ -78,13 +78,13 @@ public class DemoResource {
                     @FormParam("id") int id,
                     @FormParam("name") String name,
                     @FormParam("address") String address,
-                    @FormParam("productId") int productId) throws IOException {
+                    @FormParam("cityId") int cityId) throws IOException {
         if (storeJDBIDao != null) {
             storeJDBIDao.add(id, name, address);
         } else if (storeDAO != null) {
-            storeDAO.create(new Store(id, name, address, productId));
+            storeDAO.create(new Store(id, name, address, cityId));
         } else {
-            new TempStores().storeList.add(new Store(id, name, address, productId));
+            new TempStores().storeList.add(new Store(id, name, address, cityId));
         }
 
         response.sendRedirect("/demo");
